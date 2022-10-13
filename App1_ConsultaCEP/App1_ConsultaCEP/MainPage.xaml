@@ -7,12 +7,13 @@
     <StackLayout BackgroundColor="#FFBF00" Padding="30" Spacing="30">
         <!-- Place new controls here -->
         <Image x:Name="LOGO" Source="Logo.png"/>
-        <Entry x:Name="CEP" Placeholder="Digite o cep" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFF"/>
-        <Button x:Name="BOTAO" Text="Buscar Cep" TextColor="#FFFFF" BackgroundColor="#00416B"/>
+        <Entry x:Name="edt_CEP" Placeholder="Escreva o CEP" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF" Keyboard="Numeric" MaxLength="8" ClearButtonVisibility="WhileEditing"/>
+        <Button x:Name="btn_BOTAO" Text="Procurar Cep" TextColor="#FFFFFF" BackgroundColor="#00416B"/>
 
-        <Label x:Name="RESULTADO" Text="" 
+        <Label x:Name="edt_RESULTADO" Text="" 
            HorizontalOptions="Center"
            VerticalOptions="Center" />
+        <Button x:Name="btn_Exit" Text="Sair" TextColor="#FFFFFF" BackgroundColor="#00416B" Clicked="btn_Exit_clickable"/>
     </StackLayout>
 
 </ContentPage>
